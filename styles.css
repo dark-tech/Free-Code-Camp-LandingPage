@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+    /* margin: 0;
+    overflow-wrap: wrap; */
+    /* margin: 20px; */
+}
+
+body {
+    font-family: 'IBM Plex Serif', serif;
+    margin: 0 0 20px 0;
+    position: relative;
+    background-color: rgba(243, 190, 179, .3);
+}
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    background-color: rgb(74, 199, 230);
+    border: 1px solid #EAFDFC;
+    width: 100%;
+    height: 110px;
+}
+
+
+#header {
+    height: 110px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img {
+    /* position: relative; */
+    width: auto;
+    height: 84px;
+    margin: 0 auto;
+    padding-right: 35px;
+}
+
+#nav-bar a {
+    width: 100%;
+    margin-top: 50px;
+    padding-left: 5px;
+    padding-top: 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    /* height: 100%; */
+    text-align: left;
+    text-decoration: none;
+}
+
+#nav-bar a:nth-of-type(2){
+    padding-left: 30px;
+}
+
+#nav-bar {
+    width: 100%;
+    height: 100%;
+    /* margin-right: 310px; */
+    justify-self: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: baseline;
+}
+
+#nav-bar a:hover {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content {
+    margin: 0 100px;
+}
+
+.company_info {
+    margin-top: 115px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    gap: 5px;
+}
+
+.part1 {
+    padding: 20px;
+    height: 800px;
+    margin-bottom: 10px;
+}
+
+.part1 * {
+    /* background-color: rgba(7, 99, 173, 0.856); */
+    border: rgba(7, 99, 173, 0.856);
+    width: 100%;
+    /* height: auto; */
+    /* margin: 0; */
+    font-size: 1.7rem;
+    text-align: left;
+    letter-spacing: .1rem;
+    overflow: wrap;
+}
+
+.part1 h1 {
+    font-size: 2.3rem;
+    padding-top: 37px;
+}
+
+.part1 h3{
+    padding-top: 40px;
+}
+
+.part1 p {
+    padding-top: 5px;
+}
+
+.c-mech {
+    font-size: 1.5rem;
+}
+
+.pro {
+    color: #ABDDD9;
+}
+
+
+.part2 {
+    /* background-color: rgba(7, 99, 173, 0.856); */
+    border: rgba(7, 99, 173, 0.856);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    border: 1px solid black;
+    border-radius: 2% 1%;
+    max-width: min-content;
+    margin: 20px;
+}
+
+.serv-contact {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    column-gap: 15px;
+}
+
+.services {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.serv-type {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: rgba(171, 221, 217, .6);
+    border: 1px solid rgba(171, 221, 217, .6);
+    border-radius: 5%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.prices {
+    height: auto;
+    margin-right: 0;
+    /* padding: 0 10px; */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.amount {
+    width: 100%;
+    height: 180px;
+    margin-top: 0;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    background-color: rgba(243, 190, 179, .4);
+    border: 2px solid rgba(243, 190, 179, .4);
+    border-radius: 5%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact {
+    /* background-color: #82AAE3; */
+    width: 100%;
+    height: 250px;
+    grid-row: 1 / span 2;
+}
+
+.reach-out-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 100%;
+    height: 70%;
+}
+
+fieldset {
+    width: 100%;
+    height: 80%;
+    margin-top: 35px;
+    padding: 20px;
+    background-color: rgba(243, 190, 179, .5);
+    border: 5px solid rgba(171, 221, 217, .7);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+legend {
+    font-size: 1.5rem;
+    color: rgb(49, 218, 203);
+    font-weight: bold;
+}
+
+#email {
+    height: 30px;
+    grid-column: 1 /3;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#submit, .serv-option {
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+#submit {
+    margin-right: 80px;
+}
+
+.serv-option {
+    margin-left: 80px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .company_info {
+        width: auto;
+        height: 100%;
+        margin-top: 115px;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part1 {
+        margin-bottom: 10px;
+        height: auto;
+    }
+    .part2 {
+        padding-bottom: 20px;
+        margin-top: 5px;
+    }
+    video {
+        width: 400px;
+        height: auto;
+    }
+
+    #nav-bar {
+        width: auto;
+        /* margin-right: 50px; */
+        font-size: 1rem;
+    }
+
+    #nav-bar a:hover {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+
+    #header {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    img {
+        padding-left: 20px;
+    }
+
+    .serv-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 828px) {
+    body{
+        width: 100%;
+        height: auto;
+    }
+
+    .header {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    video {
+        width: 400px;
+        height: auto;
+    }
+
+    .company_info {
+        height: auto;
+        margin: 0 auto;
+        margin-top: 115px;
+        overflow: scroll;
+    }
+
+    #nav-bar {
+        width: auto;
+        /* margin-right: 0; */
+        padding-right: 20px;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    #nav-bar a:nth-of-type(2){
+        padding-left: 10px;
+    }
+
+    #nav-bar a:hover {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+}    
